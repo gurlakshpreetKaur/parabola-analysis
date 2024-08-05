@@ -91,17 +91,20 @@ c = getC()
 
 poly = contstructPolynomial(a, b, c)
 
+print("-----------------------")
+
 print("The polynomial is y = " + poly)
 
 if(a != 0):
     print("Vertex lies at " + str(getVertex(poly)))
     printSolutions(poly)
-    
+
 functionForCurrPolynomial = getFunctionForPolynomial(poly)
 
 print("function for polynomial has been found")
 
 while True:
+    print("-----------------------")
     x = str(input("Enter a value for x: "))
     if(x == "exit"):
         break
